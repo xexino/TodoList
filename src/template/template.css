@@ -1,23 +1,23 @@
-body {
-    width: 75%;
-    margin: 0 auto;
-    color: #0d6efd ;
-}
-.search{
-    position: relative;
-    left: 390px;
-}
-.search-icone{
-    position: relative;
-    left: 158px;
-    top: -29px;
-}
-h1 {
+h1  {
     text-align: center;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 3em;
+    letter-spacing: 3px;
+    color: rgb(255, 174, 0);
+    text-transform: uppercase;
+   }
+h3 {
+    color:rgba(255, 174, 0, 0.836);
+}   
+hr {
+    border-top: 1px dashed rgb(255, 174, 0);
+  }   
+.first{
+    width: 40%;
+}  
+.first-1{
+    width: 25%;
 }
-.input{
-    width: 20%;
-}
-.fas {
-    color:red; 
-}
+.second {
+    width: 65%
+}    

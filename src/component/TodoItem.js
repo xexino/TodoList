@@ -1,13 +1,19 @@
-const TodoItem = ({ title }) => {
+const TodoItem = ({ title , id , delet }) => {
+
+
+    
+     
     return (
         <>
-            <div className="task-item d-flex justify-content-between p-2 border m-3 ">
-
+            <li className="border d-flex justify-content-between m-2 p-2">
                 <h3>{title}</h3>
-                <button className="btn btn-ligh"><i className="fas fa-trash-alt"></i>
+                <button
+                    onClick={() => delet(id)}
+                    type="button"
+                    className="btn btn-danger">
+                    <i className="fas fa-dumpster"></i>
                 </button>
-            </div>
-
+            </li>
 
         </>
     );

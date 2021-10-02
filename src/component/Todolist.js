@@ -1,18 +1,20 @@
-import TodoItem from "./TodoItem";
-import { useState } from "react";
-
-const TodoList = ({ list }) => {
-
+import TodoItem from "./Todoitem";
+const TodoList = ({ list , delet }) => {
+    
 
 
     return (
         <>
-
-            {list.map((taskTitle) => (
-                <TodoItem title={taskTitle} />
-            ))}
-
-
+            <ul className=" mx-auto p-0 second">
+                {
+                    list.map((titleTask, index) => (
+                        <TodoItem 
+                        id={index}
+                        title={titleTask}
+                        delet={(idTask)=>delet(idTask)}/>
+                    ))
+                }
+            </ul>
         </>
     );
 }

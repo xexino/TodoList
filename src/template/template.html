@@ -16,41 +16,56 @@
 
 </head>
 
-<body style="width: 75%;">
-	<h1 style="text-align: center;">ADD TODO</h1>
-	<form>
-		<div class="input-group mb-3">
-			<input type="text" class="form-control" placeholder="Todo title" aria-label="Recipient's username"
-				aria-describedby="button-addon2">
-			<button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
-		</div>
+<body class="bg-dark">
 
-	</form>
+	<header>
+		<h1>add todo list</h1>
+
+		<!-- ADD TODO /COMPONENT -->
+
+		<div class="input-group mb-3 mx-auto " style="width: 40%;">
+			<input type="text" class="form-control m-1" placeholder="ADD to todo list 😼" style="width: 25%;">
+
+			<div class="input-group-append">
+				<button class="btn btn-warning m-1" type="button"><i class="fas fa-plus"></i>
+				</button>
+			</div>
+		</div>
+	</header>
 	<hr>
-	<div class="search">
-		<input type="search" placeholder="filter by title">
-		<div class="search-icone"><i class="fas fa-search"></i></div>
+	<div class="input-group d-flex justify-content-center m-1 ">
+		<div class="form-outline">
+			<input placeholder="search by title" class="form-control m-1" />
+			<label class="form-label" for="form1">Search</label>
+		</div>
+		<div class="input-group-append">
+			<button class="btn btn-warning m-1 " type="button"><i class="fas fa-search"></i>
+			</button>
+		</div>
+
 	</div>
-	<div class="task">
-		<div class="task-item d-flex justify-content-md-between p-2 border m-3 ">
-
-			<h1>Task numero 1</h1>
-			<button><i class="fas fa-trash-alt"></i>
+	<ul class=" mx-auto p-0" style="width: 65%;">
+		<li class="border d-flex justify-content-between m-2 p-2"> 
+			<h3>First task 🖕</h3>
+			<button type="button" class="btn btn-danger"><i class="fas fa-dumpster"></i>
 			</button>
-		</div>
-		<div class="task-item d-flex justify-content-md-between p-2 border m-3">
-
-			<h1>Task numero 2</h1>
-			<button><i class="fas fa-trash-alt"></i>
+		</li>
+		<li class="border d-flex justify-content-between m-2 p-2"> 
+			<h3>First task 🖕</h3>
+			<button type="button" class="btn btn-danger"><i class="fas fa-dumpster"></i>
 			</button>
-		</div>
-		<div class="task-item d-flex justify-content-md-between p-2 border m-3 ">
-
-			<h1>Task numero 3</h1>
-			<button><i class="fas fa-trash-alt"></i>
+		</li>
+		<li class="border d-flex justify-content-between m-2 p-2"> 
+			<h3>First task 🖕</h3>
+			<button type="button" class="btn btn-danger"><i class="fas fa-dumpster"></i>
 			</button>
-		</div>
-	</div>
+		</li>
+		<li class="border d-flex justify-content-between m-2 p-2"> 
+			<h3>First task 🖕</h3>
+			<button type="button" class="btn btn-danger"><i class="fas fa-dumpster"></i>
+			</button>
+		</li>
+	</ul>
 
 
 
